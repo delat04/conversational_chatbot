@@ -1,0 +1,53 @@
+# Node modules
+node_modules
+**/node_modules
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+frontend/dist
+frontend/.vscode
+backend/.vscode
+
+# Environment files
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Git
+.git
+.gitignore
+**/.gitattributes
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Test files
+**/__tests__
+**/*.test.js
+**/*.spec.js
+
+# Documentation
+README.md
+**/README.md
+docs
+
+# Uploads (will be created at runtime)
+backend/uploads
+uploads
+
+# Misc
+.github
+.gitlab-ci.yml
