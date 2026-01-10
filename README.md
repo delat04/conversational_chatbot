@@ -24,23 +24,23 @@ This backend system is a sophisticated **Retrieval-Augmented Generation (RAG) Pl
 
 ### **3.1 Multi-Format Support**
 ```
-📁 Document Processing System
-├── 📄 Documents
+Document Processing System
+├──  Documents
 │   ├── .pdf (pdf-parse)
 │   ├── .txt (custom stream parser)
 │   ├── .docx (mammoth)
 │   └── .doc (textract)
-├── 📊 Spreadsheets
+├──  Spreadsheets
 │   ├── .csv (csv-parser)
 │   ├── .xlsx (XLSX)
 │   └── .xls (XLSX)
-├── 🎤 Presentations
+├──  Presentations
 │   ├── .ppt (textract)
 │   └── .pptx (textract)
-├── 📋 Data Formats
+├──  Data Formats
 │   ├── .json (custom JSON parser)
 │   └── .xml (custom XML parser)
-└── 🔄 Other Formats
+└──  Other Formats
     ├── .rtf (textract)
     └── .odt (textract)
 ```
@@ -75,14 +75,14 @@ This backend system is a sophisticated **Retrieval-Augmented Generation (RAG) Pl
 
 ### **4.1 Dual-Mode Scraping Architecture**
 ```
-🌐 Web Scraping System
-├── 🚀 High-Fidelity Mode (Puppeteer)
+Web Scraping System
+├──  High-Fidelity Mode (Puppeteer)
 │   ├── Headless Chrome browser
 │   ├→ JavaScript rendering
 │   ├→ Dynamic content handling
 │   └→ Anti-bot evasion
 │
-└── ⚡ Lightweight Mode (Cheerio)
+└──  Lightweight Mode (Cheerio)
     ├→ Static HTML parsing
     ├→ Faster processing
     └→ No JavaScript execution
@@ -114,25 +114,25 @@ This backend system is a sophisticated **Retrieval-Augmented Generation (RAG) Pl
 
 ### **5.1 Intelligent Research Pipeline**
 ```
-🔬 Auto-Research Engine
-├── 📋 Query Analysis (GPT-4)
+Auto-Research Engine
+├──  Query Analysis (GPT-4)
 │   ├→ Intent detection
 │   ├→ Keyword extraction
 │   ├→ Source type recommendation
 │   └→ Freshness requirements
 │
-├── 🌐 Source Discovery (SerpAPI)
+├──  Source Discovery (SerpAPI)
 │   ├→ Multi-engine search (Google)
 │   ├→ Domain filtering
 │   ├→ Quality scoring
 │   └→ Diversity optimization
 │
-├── 🧪 Content Processing
+├──  Content Processing
 │   ├→ Parallel scraping
 │   ├→ Relevance filtering
 │   └→ Content validation
 │
-└── 🤖 Answer Synthesis (RAG)
+└──  Answer Synthesis (RAG)
     ├→ Context aggregation
     ├→ Source attribution
     └→ Multi-perspective synthesis
@@ -168,26 +168,26 @@ Quality Score = Domain Authority + Content Relevance + Freshness + Position
 
 ### **6.1 RAG-Only Conversation Architecture**
 ```
-💬 Multi-Turn Conversation System
-├── 🧠 Session Management
+ Multi-Turn Conversation System
+├──  Session Management
 │   ├→ Session ID generation
 │   ├→ 30-minute timeout
 │   ├→ 1000 concurrent session limit
 │   └→ Automatic cleanup
 │
-├── 📚 Context Management
+├──  Context Management
 │   ├→ 20-message history limit
 │   ├→ System prompt injection
 │   ├→ Context window optimization
 │   └→ Memory-efficient storage
 │
-├── 🔍 RAG Integration
+├──  RAG Integration
 │   ├→ Mandatory knowledge base search
 │   ├→ Relevance thresholding (0.3 minimum)
 │   ├→ Source citation
 │   └→ No-external-knowledge policy
 │
-└── 🤖 Response Generation
+└──  Response Generation
     ├→ GPT-4 with strict constraints
     ├→ Temperature control (0.3)
     ├→ Token limitation (1500)
@@ -222,24 +222,24 @@ Quality Score = Domain Authority + Content Relevance + Freshness + Position
 
 ### **7.1 Clustering Architecture**
 ```
-📊 Document Clustering Engine
-├── 🎯 Embedding Generation
+ Document Clustering Engine
+├──  Embedding Generation
 │   ├→ Document-level embeddings (chunk averaging)
 │   ├→ 1536-dimensional vectors
 │   └→ Storage in Supabase
 │
-├── 🔢 Clustering Algorithms
+├──  Clustering Algorithms
 │   ├→ K-Means (ml-kmeans)
 │   ├→ Hierarchical Clustering
 │   ├→ Cosine similarity thresholding
 │   └→ Optimal cluster count heuristic
 │
-├── 🏷️ Cluster Naming
+├──  Cluster Naming
 │   ├→ GPT-3.5 generated names
 │   ├→ 2-4 word descriptive names
 │   └→ Fallback to predefined names
 │
-└── 🔍 Cluster-Aware Search
+└──  Cluster-Aware Search
     ├→ Query-to-cluster relevance
     ├→ Cluster-weighted search
     └→ Multi-cluster query routing
@@ -260,26 +260,26 @@ const CLUSTERING_CONFIG = {
 
 ### **8.1 Enhanced RAG Pipeline**
 ```
-🧠 Cluster-Aware RAG System
-├── 🎯 Smart Query Routing
+ Cluster-Aware RAG System
+├──  Smart Query Routing
 │   ├→ Query embedding generation
 │   ├→ Cluster relevance calculation
 │   ├→ Multi-cluster selection
 │   └→ Fallback to global search
 │
-├── 📚 Context Retrieval
+├──  Context Retrieval
 │   ├→ Cluster-filtered search
 │   ├→ Per-cluster chunk limits
 │   ├→ Cross-cluster deduplication
 │   └→ Context length optimization
 │
-├── ⚖️ Re-ranking & Synthesis
+├──  Re-ranking & Synthesis
 │   ├→ Cluster-weighted scoring
 │   ├→ Final score = similarity + (cluster_relevance * 0.3)
 │   ├→ Context length limitation (4000 chars)
 │   └→ Multi-cluster answer synthesis
 │
-└── 🤖 Response Generation
+└──  Response Generation
     ├→ Cluster-aware system prompts
     ├→ Source-by-cluster attribution
     └→ Temperature control (0.7)
@@ -291,43 +291,43 @@ const CLUSTERING_CONFIG = {
 ```
 📡 API Structure (Grouped by Functionality)
 
-├── 📁 Document Management
+├──  Document Management
 │   ├→ POST   /upload          # File upload & processing
 │   ├→ GET    /documents       # List all documents
 │   ├→ GET    /documents-enhanced # Enhanced listing
 │   └→ DELETE /documents/:id   # Delete document
 │
-├── 🌐 Web Scraping
+├──  Web Scraping
 │   ├→ POST   /scrape          # Single page scraping
 │   ├→ POST   /scrape-multiple # Multiple pages
 │   ├→ POST   /scrape-test     # Test scraping
 │   └→ GET    /scraping-stats  # Scraping statistics
 │
-├── 🔍 Search & RAG
+├──  Search & RAG
 │   ├→ POST   /search          # Semantic search
 │   ├→ POST   /generate        # RAG response
 │   ├→ POST   /rag             # Cluster-aware RAG
 │   └→ POST   /rag-batch       # Batch RAG
 │
-├── 🔬 Auto-Research
+├──  Auto-Research
 │   ├→ POST   /research        # Full research pipeline
 │   ├→ POST   /research/quick  # Quick research
 │   ├→ POST   /research/custom-sources # Custom URLs
 │   └→ GET    /research/history # Research history
 │
-├── 💬 Conversation System
+├──  Conversation System
 │   ├→ POST   /conversation/start        # Start conversation
 │   ├→ POST   /conversation/message      # Send message
 │   ├→ POST   /conversation/check-knowledge # Knowledge check
 │   └→ GET    /conversation/knowledge-stats # Knowledge stats
 │
-├── 📊 Clustering
+├──  Clustering
 │   ├→ POST   /cluster-documents         # Trigger clustering
 │   ├→ GET    /clusters                  # List clusters
 │   ├→ GET    /clusters/:clusterId/documents # Cluster docs
 │   └→ POST   /search-clustered          # Cluster-aware search
 │
-└── 🛠️ Utility & Monitoring
+└──  Utility & Monitoring
     ├→ GET    /stat                     # System status
     ├→ GET    /memory                   # Memory usage
     ├→ GET    /supported-formats        # Supported file formats
@@ -338,26 +338,26 @@ const CLUSTERING_CONFIG = {
 
 ### **10.1 Multi-Layer Error Handling**
 ```
-🛡️ Error Resilience System
-├── 🎯 Input Validation
+ Error Resilience System
+├──  Input Validation
 │   ├→ File type validation
 │   ├→ URL normalization
 │   ├→ Size limits (100MB files)
 │   └→ Rate limiting
 │
-├── 🔄 Retry Mechanisms
+├──  Retry Mechanisms
 │   ├→ Embedding generation retries (3 attempts)
 │   ├→ API timeout handling (30-60 seconds)
 │   ├→ Exponential backoff
 │   └→ Graceful degradation
 │
-├── 🚨 Error Recovery
+├──  Error Recovery
 │   ├→ Partial processing recovery
 │   ├→ Failed chunk skipping
 │   ├→ Fallback scraping methods
 │   └→ Cleanup on failure
 │
-└── 📊 Error Logging
+└──  Error Logging
     ├→ Structured error logging
     ├→ Error categorization
     ├→ Performance metrics
@@ -495,16 +495,27 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 ## Project Setup
 
 ```sh
+cd /frontend
+npm install
+```
+```sh
+cd /backend
 npm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
+cd /frontend
 npm run dev
 ```
+```sh
+cd /backend
+node app.js
 
-### Compile and Minify for Production
+```
+
+### Compile and Minify frontend for Production(docker image build frontend automatically)
 
 ```sh
 npm run build
